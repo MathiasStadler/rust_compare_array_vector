@@ -45,4 +45,12 @@ fn main() {
         // println!("The current index is {}", i);
     }
 
+    let middle = &list[1..4]; // A slice of a: just the elements 1, 2, and 3
+    for (i, el) in middle.iter().enumerate() {
+        println!("nums slice: current index {} get value  {}", i,el);
+        // println!("The current index is {}", i);
+    }
+
+    
+
 }
