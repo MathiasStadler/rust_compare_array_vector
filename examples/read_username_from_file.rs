@@ -1,4 +1,4 @@
-
+use std::error::Error;
 use std::fs::File;
 use std::io::{self, Read};
 
@@ -24,7 +24,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     match read_username_from_file() {
         Ok(_) => Ok(),
-        Err(e) => Err(e),
+        Err(e) => Err(),
     }
 
     
