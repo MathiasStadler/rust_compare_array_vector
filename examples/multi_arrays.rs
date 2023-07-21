@@ -19,8 +19,6 @@ fn main() {
 
     println!("d: {}", _d);
 
-    
-    
     // not work array has fix size
     //_c[1][4] = 5;
 
@@ -31,9 +29,22 @@ fn main() {
     vec2.push(2);
     let mut vec3 = Vec::new();
     vec3.push(vec1);
-    vec3.push(vec2);
+    vec3.push(vec2.clone());
 
-    println!("vec3 => {:?}",vec3);
+    println!("vec3 => {:?}", vec3);
+
+    //init multi array
+    let init_vector = [[1], [2]];
+    println!("init_vector => {:?}", init_vector);
+
+    // https://www.programiz.com/rust/hashset
+    let _colors: &str = {
+        "Green";
+        "Yellow";
+        "Red"
+    };
+    println!("len => {:?}", &_colors.len());
+    println!("first letter => {:?}", &_colors[0..1]);
 }
 
 // Methods for Array Initialization in Rust
