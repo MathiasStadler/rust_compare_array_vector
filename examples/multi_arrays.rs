@@ -45,6 +45,11 @@ fn main() {
     };
     println!("len => {:?}", &_colors.len());
     println!("first letter => {:?}", &_colors[0..1]);
+
+    
+     }
+
+
 }
 
 // Methods for Array Initialization in Rust
